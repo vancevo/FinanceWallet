@@ -14,7 +14,7 @@ export function Topbar() {
         <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
           Demo workspace
         </p>
-        <h1 className="text-3xl font-bold tracking-tight text-slate-950">Dashboard</h1>
+        <h1 className="text-3xl font-bold tracking-tight text-slate-950">FinanceWallet</h1>
       </div>
 
       <div className="flex items-center gap-3">
@@ -35,7 +35,7 @@ export function Topbar() {
           </Avatar>
           <div className="hidden text-sm sm:block">
             <div className="font-medium">Demo User</div>
-            <div className="text-xs text-slate-500">demo@finpilot.local</div>
+            <div className="text-xs text-slate-500">demo@financewallet.local</div>
           </div>
         </div>
       </div>

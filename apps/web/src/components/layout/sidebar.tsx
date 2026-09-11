@@ -22,14 +22,14 @@ export function Sidebar() {
             <div className="flex items-center gap-3">
                 <div className="grid size-10 place-items-center rounded-lg bg-sky-400 font-bold text-slate-950">F</div>
                 <div className="text-left">
-                    <div className="text-lg font-bold">FinPilot</div>
+                    <div className="text-lg font-bold">FinanceWallet</div>
                     <div className="text-xs text-slate-400">Personal finance cockpit</div>
                 </div>
             </div>
 
             <nav className="flex flex-col gap-1">
                 {mainNavItems.map((item: any) => {
-                    return <SidebarItem mainNavItem={item} />;
+                    return <SidebarItem key={item.href} mainNavItem={item} />;
                 })}
             </nav>
         </div>

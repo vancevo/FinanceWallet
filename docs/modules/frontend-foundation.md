@@ -49,6 +49,7 @@ Status: in-progress
 - Dashboard list keys: dashboard mock collections include stable `id` fields, and React render keys in dashboard page/components use those ids instead of labels, names, or composite display fields.
 - Shared modal/pagination: `Dialog` wrappers and `PaginationControls` live in shared components; dashboard account balances use them for a 5-item preview plus a paginated View all modal.
 - Pagination state: reusable `usePagination` owns page/page-size slicing and clamping. Account balances only shows the View all action when the account collection exceeds the 5-item preview limit, and its modal uses a fixed height to avoid layout jumps between pages.
+- UI brand: the dashboard shell displays `FinanceWallet` as the product name while repository/package identifiers remain unchanged.
 - Compound component naming: local compound components expose `Container` for the outer wrapper instead of `Root` to avoid confusing app layout containers with React/root primitives.
 - Why existing capabilities were insufficient: the Vite starter had no app shell, no reusable product components, and no shared responsive state.
 - Impact on current consumers/resources: `App.tsx` now renders `DashboardPage`; Vite starter assets are no longer part of the runtime shell.
